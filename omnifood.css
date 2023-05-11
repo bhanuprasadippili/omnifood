@@ -1,0 +1,2339 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+nav img {
+    width: 17rem;
+}
+
+nav section {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+nav ion-icon {
+    font: 2.5rem;
+    display: none;
+}
+
+nav ul {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav button {
+    width: 15rem;
+    height: 4rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: .8rem;
+    color: white;
+    background-color: rgb(229, 151, 6);
+    border: none;
+}
+
+#home {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+#home aside {
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+#home>img {
+    width: 38%;
+}
+
+#home aside h2 {
+    font-size: 5rem;
+}
+
+#home p {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+#home article {
+    display: flex;
+    gap: 2rem;
+}
+
+#home article button:first-child {
+    width: 20rem;
+    height: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(229, 151, 6);
+    border: none;
+    border-radius: .5rem;
+}
+
+
+#home article button:first-child:hover {
+    background-color: rgb(198, 131, 6);
+}
+
+#home article button:last-child {
+    width: 15rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    border-radius: .5rem;
+}
+
+#home article button:last-child:hover {
+    background-color: transparent;
+    border: 3px solid white;
+}
+
+#home aside section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#home aside section div {
+    position: absolute;
+    left: 0;
+}
+
+#home aside section h5 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 20rem;
+    top: 2rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+#home section span {
+    color: rgb(188, 124, 5);
+}
+
+#home aside section div img {
+    width: 4rem;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#home aside section div img:first-child {
+    left: 0;
+}
+
+#home aside section div img:nth-child(2) {
+    left: 3rem;
+}
+
+
+#home aside section div img:nth-child(3) {
+    left: 6rem;
+}
+
+
+#home aside section div img:nth-child(4) {
+    left: 9rem;
+}
+
+#home aside section div img:nth-child(5) {
+    left: 12rem;
+}
+
+#home aside section div img:last-child {
+    left: 15rem;
+}
+
+#parent {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    filter: contrast(.1);
+}
+
+#parent section {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#parent section img:nth-child(odd) {
+    width: 22rem;
+}
+
+#parent section img:nth-child(even) {
+    width: 10rem;
+}
+
+#work {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#work section {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#work section span {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: rgb(212, 140, 7);
+}
+
+#work section h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+#tell {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tell section {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+#tell section strong {
+    font-size: 9rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    filter: opacity(.2);
+}
+
+#tell section h2 {
+    font-size: 3rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#tell section p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+#tell article {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#tell article img {
+    width: 18rem;
+    position: absolute;
+}
+
+#tell article h3 {
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+}
+
+#tell article h3::before {
+    content: "";
+    width: 31rem;
+    height: 31rem;
+    border-radius: 50%;
+    background-color: rgb(246, 236, 220);
+    position: absolute;
+}
+
+#tell article h3::after {
+    content: "";
+    width: 24rem;
+    height: 24rem;
+    border-radius: 50%;
+    background-color: rgb(241, 223, 188);
+    position: absolute;
+}
+
+#approve {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+#approve section {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+#approve section strong {
+    font-size: 9rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    filter: opacity(.2);
+}
+
+#approve section h2 {
+    font-size: 3rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#approve section p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+#approve article {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#approve article img {
+    width: 18rem;
+    position: absolute;
+}
+
+#approve article h3 {
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+}
+
+#approve article h3::before {
+    content: "";
+    width: 31rem;
+    height: 31rem;
+    border-radius: 50%;
+    background-color: rgb(246, 236, 220);
+    position: absolute;
+}
+
+#approve article h3::after {
+    content: "";
+    width: 24rem;
+    height: 24rem;
+    border-radius: 50%;
+    background-color: rgb(241, 223, 188);
+    position: absolute;
+}
+
+#receive {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#receive section {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+#receive section strong {
+    font-size: 9rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    filter: opacity(.2);
+}
+
+#receive section h2 {
+    font-size: 3rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#receive section p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+#receive article {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#receive article img {
+    width: 18rem;
+    position: absolute;
+}
+
+#receive article h3 {
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+}
+
+#receive article h3::before {
+    content: "";
+    width: 31rem;
+    height: 31rem;
+    border-radius: 50%;
+    background-color: rgb(246, 236, 220);
+    position: absolute;
+}
+
+#receive article h3::after {
+    content: "";
+    width: 24rem;
+    height: 24rem;
+    border-radius: 50%;
+    background-color: rgb(241, 223, 188);
+    position: absolute;
+}
+
+#meals {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding: 3rem 0;
+}
+
+#meals h5 {
+    font-size: 1.5rem;
+    color: rgb(220, 145, 6);
+}
+
+#meals h2 {
+    font-size: 4.5rem;
+}
+
+#meals aside {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    padding: 4rem 0;
+}
+
+#meals aside article {
+    width: 28%;
+    height: 65vh;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#meals aside article section {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+    padding-bottom: 3rem;
+}
+
+#meals aside section h4 {
+    width: 9.5rem;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+    padding: .5rem;
+    color: black;
+    background-color: rgb(5, 203, 5);
+}
+
+#meals aside section h3:first-child {
+    border-radius: 1rem;
+    padding: .6rem;
+    color: black;
+    background-color: rgb(139, 223, 139);
+}
+
+#meals aside section h3:last-child {
+    border-radius: 1rem;
+    padding: .6rem;
+    color: black;
+    background-color: rgb(242, 226, 81);
+}
+
+#meals aside article p {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.8rem;
+}
+
+#meals aside article p ion-icon {
+    font-size: 2rem;
+    color: orange;
+}
+
+#meals aside section h2 {
+    font-size: 2rem;
+}
+
+#meals aside section span {
+    display: flex;
+    gap: .5rem;
+}
+
+#meals aside article img {
+    width: 100%;
+}
+
+#meals aside picture {
+    width: 25%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.5rem;
+    border: none;
+}
+
+#meals aside ul {
+    font-size: 2rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+#meals aside picture h1 {
+    font-size: 3rem;
+}
+
+#meals aside ul li {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#meals aside ul li ion-icon {
+    font-size: 2.5rem;
+    color: orange;
+}
+
+#meals aside article:hover {
+    transform: translateY(-2rem);
+    transition: .6s;
+}
+
+#meals u {
+    font-size: 1.8rem;
+    color: rgb(232, 152, 5);
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+#meals u:hover {
+    text-decoration: none;
+}
+
+#test {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(248, 240, 227);
+}
+
+#test aside {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#test aside article {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+#test aside article h3 {
+    width: 80%;
+    font-size: 1.5rem;
+    color: rgb(192, 127, 6);
+}
+#test aside article h2 {
+    width: 80%;
+    font-size: 4.5rem;
+    padding-bottom: 3rem;
+}
+
+#test aside article div {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#test aside article div section img {
+    width: 6rem;
+    border-radius: 50%;
+}
+
+#test aside article div section {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#test aside article div section p {
+    font-size: 1.8rem;
+    opacity: .7;
+    line-height: 3rem;
+}
+
+#test aside article div section h4 {
+    font-size: 1.7rem;
+    opacity: .6;
+}
+
+#test aside picture {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+#test aside picture img {
+    width: 30%;
+    padding-bottom: 1.5rem;
+}
+
+#test aside picture img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
+
+#pricing {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 3rem 0;
+}
+
+#pricing section {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#pricing section h5 {
+    font-size: 1.7rem;
+    color: rgb(199, 131, 6);
+}
+
+#pricing section h2 {
+    font-size: 5rem;
+}
+
+
+#pricing aside {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+#pricing aside article {
+    width: 45%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border: 1px solid rgb(254, 237, 212);
+    border-radius: 1rem;
+}
+
+#pricing aside article:last-child {
+    background-color: rgb(251, 245, 235);
+}
+
+#pricing aside article h4 {
+    font-size: 2.1rem;
+    color:rgb(194, 129, 9) ;
+}
+
+#pricing aside article h1 {
+    display: flex;
+    align-items: baseline;
+    font-size: 6rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#pricing aside article h1 ion-icon {
+    font-size: 3rem;
+}
+
+#pricing aside article p {
+    font-size: 1.6rem;
+}
+
+#pricing aside article ul {
+    font-size: 2rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+#pricing aside article ul li {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+#pricing aside article ul li ion-icon {
+    font-size: 2.7rem;
+    color: rgb(220, 158, 44);
+}
+
+
+#pricing aside article button {
+    width: 20rem;
+    height: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(229, 151, 6);
+    border: none;
+    border-radius: .5rem;
+}
+
+#pricing aside article button:hover {
+    background-color: rgb(198, 131, 6);
+}
+
+
+#plans {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 3rem 0;
+}
+
+#plans>p {
+    font-size: 1.7rem;
+}
+
+#plans aside {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding-top: 3rem;
+}
+
+#plans aside section {
+    width: 22%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#plans aside section ion-icon{
+    font-size: 3.5rem;
+    padding: 1rem;
+    border-radius: 50%;
+    color: orange;
+    background-color: rgb(250, 243, 232);
+}
+
+#plans aside section h3 {
+    font-size: 2.5rem;
+}
+
+#plans aside section p {
+    font-size: 1.9rem;
+    line-height: 3rem;
+}
+
+#free {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+#free aside {
+    width: 80%;
+    /* height: 50vh; */
+    display: flex;
+    border: 1px solid orange;
+    border-radius: 1rem;
+    background-color: rgb(209, 138, 7);
+    overflow: hidden;
+}
+
+#free article {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#free aside article h2 {
+    width: 80%;
+    font-size: 5rem;
+}
+
+#free aside article p {
+    width: 80%;
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+#free img {
+    width: 30%;
+}
+
+#free aside picture {
+    width: 80%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#free aside picture section {
+    width: 40%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+#free aside picture section:last-child {
+    justify-content: flex-end;
+}
+
+
+#free aside section h4 {
+    font-size: 1.7rem;
+}
+
+#free aside section input,select {
+    font-size: 1.8rem;
+    width: 100%;
+    height: 4.5rem;
+    padding-left: 1rem;
+    border-radius: .7rem;
+    border: none;
+}
+
+#free aside section input::placeholder {
+    font-size: 1.8rem;
+    filter: opacity(.5);
+}
+/* 
+#free aside section select {
+    width: 100%;
+    height: 4rem;
+    padding-left: 1rem;
+    border-radius: .7rem;
+    border: none;
+} */
+
+
+#free aside section button {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    width: 100%;
+    height: 4.5rem;
+    color: white;
+    background-color: rgb(82, 2, 2);
+    border-radius: .7rem;
+    border: none;
+}
+
+#free aside section button:hover {
+    color: black;
+    background-color: white;
+}
+
+
+footer {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.119);
+}
+
+footer aside {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+footer aside section {
+    width: 20%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3.5rem;
+}
+
+footer aside section span {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+footer aside section span ion-icon {
+    font-size: 2.5rem;
+    opacity: .5;
+}
+
+footer aside section span ion-icon:hover {
+    opacity: .8;
+}
+
+footer aside section img {
+    width: 15rem;
+}
+
+footer aside section:first-child h5 {
+    font-size: 1.3rem;
+    opacity: .6;
+    padding-top: 2rem;
+}
+
+footer aside section h3 {
+    font-size: 1.8rem;
+}
+
+footer aside section p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    opacity: .6;
+}
+
+footer aside section ul {
+    font-size: 1.7rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: flex-start;
+    opacity: .7;
+}
+
+ 
+@media screen and (max-width: 1024px) and  (min-width: 768px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        width: 100%;
+        height: 6rem;
+        top: 0;
+    }
+
+    nav section {
+        display: none;
+    }
+
+    nav ion-icon {
+        font-size: 3rem;
+        display: flex;
+    }
+
+    nav:hover section {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 6rem;
+        width: 100%;
+        background-color: white;
+        color: black;
+        height: 20rem;
+        animation: nav_anim 3s 1;
+        overflow: hidden;
+    }
+
+    #home {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+        padding: 3rem 0;
+    }
+
+    #home aside {
+        padding-top: 10rem;
+        width: 80%;
+        align-items: center;
+    }
+
+
+    #home aside h2 {
+        font-size: 3.7rem;
+        text-align: center;
+    }
+
+    #home aside p {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    #home aside section  {
+        width: 80%;
+    }
+
+    #home aside section div img {
+        width: 3.5rem;
+    }
+
+    #home aside article button:first-child {
+        width: 18rem;
+        height: 4rem;
+        font-size: 1.8rem;
+    }
+
+    #home aside article button:last-child {
+        width: 18rem;
+        height: 4rem;
+        font-size: 1.8rem;
+    }
+
+
+    #parent {
+        width: 100%;
+        padding: 3rem 0;
+        gap: 2rem;
+    }
+
+    #parent section {
+        width: 90%;
+    }
+
+    #parent h2 {
+        font-size: 1.4rem;
+    }
+
+    #parent section img:nth-child(odd) {
+        width: 15rem;
+    }
+    
+    #parent section img:nth-child(even) {
+        width: 7rem;
+    }
+
+    #work {
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    #work section {
+        width: 90%;
+    }
+
+    #work section span {
+        font-size: 1.2rem;
+    }
+
+    #work section h1 {
+        font-size: 2.8rem;
+        font-weight: bold;
+    }
+
+    
+    #tell {
+        width: 100%;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+    #tell section {
+        width: 45%;
+        gap: 2rem;
+    }
+
+    #tell section strong {
+        font-size: 6rem;
+    }
+
+    #tell section h2 {
+        font-size: 1.8rem;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    #tell section p {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    #tell article {
+        width: 45%;
+    }
+
+    #tell article img {
+        width: 12rem;
+    }
+
+    #tell article h3 {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    #tell article h3::before {
+        width: 23rem;
+        height: 23rem;
+    }
+
+    #tell article h3::after {
+        width: 16rem;
+        height: 16rem;
+    }
+
+    #approve {
+        width: 100%;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+    #approve section {
+        width: 45%;
+        gap: 2rem;
+    }
+
+    #approve section strong {
+        font-size: 6rem;
+    }
+
+    #approve section h2 {
+        font-size: 1.8rem;
+    }
+
+    #approve section p {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    #approve article {
+        width: 45%;
+    }
+
+    #approve article img {
+        width: 12rem;
+    }
+
+    #approve article h3 {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    #approve article h3::before {
+        width: 23rem;
+        height: 23rem;
+    }
+
+    #approve article h3::after {
+        width: 16rem;
+        height: 16rem;
+    }
+
+    #receive {
+        width: 100%;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+    
+    #receive section {
+        width: 45%;
+        gap: 2rem;
+    }
+    
+    #receive section strong {
+        font-size: 6rem;
+    }
+    
+    #receive section h2 {
+        font-size: 1.8rem;
+    }
+    
+    #receive section p {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+    
+    #receive article {
+        width: 45%;
+    }
+    
+    #receive article img {
+        width: 12rem;
+    }
+    
+    #receive article h3 {
+        width: 12rem;
+        height: 12rem;
+    }
+    
+    #receive article h3::before {
+        width: 23rem;
+        height: 23rem;
+    }
+    
+    #receive article h3::after {
+        width: 16rem;
+        height: 16rem;
+    }
+
+
+    #meals {
+        width: 100%;
+        height: auto;
+    }
+
+    #meals h5 {
+        font-size: 1.3rem;
+    }
+    
+    #meals h2 {
+        font-size: 3rem;
+    }
+    
+    #meals aside {
+        width: 90%;
+        height: auto;
+    }
+    
+    #meals aside article {
+        width: 37%;
+        height: auto;
+    }
+
+    #meals aside article img {
+        padding-bottom: 2rem;
+    }
+    
+    #meals aside article section {
+        width: 70%;
+        height: auto;
+    }
+    
+    #meals aside section h4 {
+        display: flex;
+        justify-content: center;
+        font-size: 1rem;
+        padding: .4rem;
+    }
+    
+    #meals aside section h3:first-child {
+        padding: .4rem;
+    }
+    
+    #meals aside section h3:last-child {
+        padding: .4rem;
+    }
+    
+    #meals aside article p {
+        font-size: 1.5rem;
+    }
+    
+    #meals aside article p ion-icon {
+        font-size: 1.7rem;
+    }
+    
+    #meals aside section h2 {
+        font-size: 1.7rem;
+    }
+    
+    
+    #meals aside picture {
+        width: 40%;
+        height: 60vh;
+    }
+    
+    #meals aside ul {
+        font-size: 1.5rem;
+        gap: 1rem;
+    }
+    
+    #meals aside picture h1 {
+        font-size: 2rem;
+    }
+   
+    #meals aside article:hover {
+        transform: translateY(-2rem);
+        transition: .6s;
+    }
+    
+    #meals u {
+        font-size: 1.6rem;
+    }
+    
+    #test {
+        width: 100%;
+        height: auto;
+        padding: 6rem 0;
+    }
+    
+    #test aside {
+        width: 100%;
+        flex-direction: column;
+        gap: 6rem;
+    }
+    
+    #test aside article {
+        width: 100%;
+    }
+    #test aside article h3 {
+        width: 90%;
+        font-size: 1.2rem;
+        color: rgb(192, 127, 6);
+    }
+    #test aside article h2 {
+        width: 90%;
+        font-size: 3rem;
+        padding-bottom: 3rem;
+    }
+    
+    #test aside article div {
+        width: 90%;
+    }
+    
+    #test aside article div section img {
+        width: 5rem;
+    }
+    
+    #test aside article div section {
+        width: 45%;
+    }
+    
+    #test aside article div section p {
+        font-size: 1.5rem;
+    }
+    
+    #test aside article div section h4 {
+        font-size: 1.4rem;
+    }
+    
+    #test aside picture {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    
+    #test aside picture img {
+        width: 12rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    #test aside picture img:hover {
+        transform: scale(1.1);
+        transition: 1s;
+    }
+
+    #pricing {
+        width: 100%;
+        padding-top: 6rem;
+    }
+    
+    #pricing section {
+        width: 90%;
+    }
+    
+    #pricing section h5 {
+        font-size: 1.4rem;
+    }
+    
+    #pricing section h2 {
+        font-size: 3rem;
+    }
+    
+    
+    #pricing aside {
+        width: 80%;
+    }
+    
+    #pricing aside article {
+        width: 45%;
+        height: 70vh;
+
+
+    }
+
+    #pricing aside article h4 {
+        font-size: 1.6rem;
+    }
+    
+    #pricing aside article h1 {
+        font-size: 5rem;
+        font-family: sans-serif;
+    }
+    
+    #pricing aside article h1 ion-icon {
+        font-size: 2.5rem;
+    }
+    
+    #pricing aside article p {
+        font-size: 1.4rem;
+    }
+    
+    #pricing aside article ul {
+        font-size: 1.5rem;
+    }
+    
+    #pricing aside article ul li ion-icon {
+        font-size: 2.3rem;
+    }
+    
+    
+    #pricing aside article button {
+        width: 17rem;
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+
+    #plans {
+        width: 100%;
+        height: auto;
+    }
+    
+    #plans>p {
+        width: 80%;
+        font-size: 1.3rem;
+    }
+    
+    #plans aside {
+        width: 90%;
+    }
+    
+    #plans aside section {
+        width: 22%;
+        height: auto;
+        gap: 2rem;
+    }
+    
+    #plans aside section ion-icon{
+        font-size: 3rem;
+        padding: .8rem;
+    }
+    
+    #plans aside section h3 {
+        font-size: 1.8rem;
+    }
+    
+    #plans aside section p {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+
+    
+    #free {
+        width: 100%;
+        height: auto;
+    }
+
+    #free aside {
+        width: 95%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    #free article {
+        width: 55%;
+        height: auto;
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+
+    #free aside article h2 {
+        width: 80%;
+        font-size: 3rem;
+    }
+
+    #free aside article p {
+        width: 80%;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    #free img {
+        width: 45%;
+        opacity: .7;
+    }
+
+    #free aside picture {
+        width: 80%;
+        height: auto;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    #free aside picture section {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+
+    #free aside section h4 {
+        font-size: 1.3rem;
+    }
+
+    #free aside section input,select {
+        font-size: 1.4rem;
+        width: 100%;
+        height: 3.7rem;
+    }
+
+    #free aside section input::placeholder {
+        font-size: 1.4rem;
+        filter: opacity(.5);
+    }
+
+    #free aside section button {
+        font-size: 1.5rem;
+        height: 4rem;
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+        padding: 6rem 0;
+    }
+
+    footer aside {
+        width: 90%;
+        height: auto;
+    }
+
+    footer aside section {
+        width: 20%;
+        height: 20vh;
+    }
+
+    footer aside section span ion-icon {
+        font-size: 2rem;
+    }
+
+    footer aside section img {
+        width: 13rem;
+    }
+
+    footer aside section:first-child h5 {
+        font-size: 1.2rem;
+    }
+
+    footer aside section h3 {
+        font-size: 1.4rem;
+    }
+
+    footer aside section p {
+        font-size: 1.3rem;
+        font-weight: lighter;
+        opacity: .8;
+    }
+
+    footer aside section ul {
+        font-size: 1.3rem;
+    }
+
+} 
+
+
+
+@media screen and (max-width: 767px) and  (min-width: 369px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        width: 100%;
+        height: 6rem;
+        top: 0;
+    }
+
+    nav section {
+        display: none;
+    }
+
+    nav ion-icon {
+        font-size: 3rem;
+        display: flex;
+    }
+
+    #home {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+        padding: 3rem 0;
+    }
+
+    #home>img {
+        width: 60%;
+    }
+
+    #home aside {
+        padding-top: 10rem;
+        width: 85%;
+        align-items: center;
+    }
+
+
+    #home aside h2 {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    #home aside p {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    #home aside section  {
+        width: 100%;
+    }
+
+    #home aside section h5 {
+        font-size: 1.3rem;
+        left: 13rem;
+    }
+
+
+    #home aside section div img {
+        width: 3rem;
+    }
+
+    #home aside section div img:first-child {
+        left: 0;
+    }
+    
+    #home aside section div img:nth-child(2) {
+        left: 2rem;
+    }
+    
+    
+    #home aside section div img:nth-child(3) {
+        left: 4rem;
+    }
+    
+    
+    #home aside section div img:nth-child(4) {
+        left: 6rem;
+    }
+    
+    #home aside section div img:nth-child(5) {
+        left: 8rem;
+    }
+    
+    #home aside section div img:last-child {
+        left: 10rem;
+    }
+
+    #home aside article button:first-child {
+        width: 16rem;
+        height: 4rem;
+        font-size: 1.8rem;
+    }
+
+    #home aside article button:last-child {
+        width: 16rem;
+        height: 4rem;
+        font-size: 1.8rem;
+    }
+
+
+    #parent {
+        width: 100%;
+        padding: 3rem 0;
+        gap: 2rem;
+    }
+
+    #parent section {
+        width: 90%;
+        gap: 1rem;
+    }
+
+    #parent h2 {
+        font-size: 1.2rem;
+    }
+
+    #parent section img:nth-child(odd) {
+        width: 8rem;
+    }
+    
+    #parent section img:nth-child(even) {
+        width: 4rem;
+    }
+
+    #work {
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    #work section {
+        width: 90%;
+    }
+
+    #work section span {
+        font-size: 1.2rem;
+    }
+
+    #work section h1 {
+        font-size: 2.8rem;
+        font-weight: bold;
+    }
+
+    
+    #tell {
+        width: 100%;
+        justify-content: space-between;
+        padding: 6rem 0;
+        flex-direction: column;
+        gap: 8rem;
+    }
+
+    #tell section {
+        width: 90%;
+        gap: 2rem;
+    }
+
+    #tell section strong {
+        font-size: 6rem;
+    }
+
+    #tell section h2 {
+        font-size: 1.8rem;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    #tell section p {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    #tell article {
+        width: 90%;
+        padding-bottom: 3rem;
+    }
+
+    #tell article img {
+        width: 12rem;
+    }
+
+    #tell article h3 {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    #tell article h3::before {
+        width: 23rem;
+        height: 23rem;
+    }
+
+    #tell article h3::after {
+        width: 16rem;
+        height: 16rem;
+    }
+
+    #approve {
+        width: 100%;
+        justify-content: space-between;
+        padding: 10rem 0;
+        flex-direction: column;
+    }
+
+    #approve section {
+        width: 90%;
+        gap: 2rem;
+    }
+
+    #approve section strong {
+        font-size: 6rem;
+    }
+
+    #approve section h2 {
+        font-size: 1.8rem;
+    }
+
+    #approve section p {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    #approve article {
+        width: 90%;
+        padding-top: 8rem;
+    }
+
+    #approve article img {
+        width: 12rem;
+    }
+
+    #approve article h3 {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    #approve article h3::before {
+        width: 23rem;
+        height: 23rem;
+    }
+
+    #approve article h3::after {
+        width: 16rem;
+        height: 16rem;
+    }
+
+    #receive {
+        width: 100%;
+        justify-content: space-between;
+        padding: 10rem 0;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    
+    #receive section {
+        width: 90%;
+        gap: 2rem;
+    }
+    
+    #receive section strong {
+        font-size: 6rem;
+    }
+    
+    #receive section h2 {
+        font-size: 1.8rem;
+    }
+    
+    #receive section p {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+    
+    #receive article {
+        width: 90%;
+        padding-top: 3rem;
+    }
+    
+    #receive article img {
+        width: 12rem;
+    }
+    
+    #receive article h3 {
+        width: 12rem;
+        height: 12rem;
+    }
+    
+    #receive article h3::before {
+        width: 23rem;
+        height: 23rem;
+    }
+    
+    #receive article h3::after {
+        width: 16rem;
+        height: 16rem;
+    }
+
+
+    #meals {
+        width: 100%;
+        height: auto;
+        padding: 10rem 0;
+    }
+
+    #meals h5 {
+        font-size: 1.3rem;
+        padding-top: 3rem;
+    }
+    
+    #meals h2 {
+        width: 90%;
+        font-size: 2.8rem;
+        text-align: center;
+    }
+    
+    #meals aside {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+    
+    #meals aside article {
+        width: 90%;
+        height: auto;
+    }
+
+    #meals aside article img {
+        padding-bottom: 2rem;
+    }
+    
+    #meals aside article section {
+        width: 70%;
+        height: auto;
+    }
+    
+    #meals aside section h4 {
+        display: flex;
+        justify-content: center;
+        font-size: 1rem;
+        padding: .4rem;
+    }
+    
+    #meals aside section h3:first-child {
+        padding: .4rem;
+    }
+    
+    #meals aside section h3:last-child {
+        padding: .4rem;
+    }
+    
+    #meals aside article p {
+        font-size: 1.5rem;
+    }
+    
+    #meals aside article p ion-icon {
+        font-size: 1.7rem;
+    }
+    
+    #meals aside section h2 {
+        font-size: 1.7rem;
+    }
+    
+    
+    #meals aside picture {
+        width: 40%;
+        height: 60vh;
+    }
+    
+    #meals aside ul {
+        font-size: 1.5rem;
+        gap: 1rem;
+    }
+    
+    #meals aside picture h1 {
+        font-size: 2rem;
+    }
+   
+    #meals aside article:hover {
+        transform: translateY(-2rem);
+        transition: .6s;
+    }
+    
+    #meals u {
+        font-size: 1.6rem;
+    }
+    
+    #test {
+        width: 100%;
+        height: auto;
+        padding: 6rem 0;
+    }
+    
+    #test aside {
+        width: 100%;
+        flex-direction: column;
+        gap: 6rem;
+    }
+    
+    #test aside article {
+        width: 100%;
+    }
+    #test aside article h3 {
+        width: 90%;
+        font-size: 1.2rem;
+        color: rgb(192, 127, 6);
+    }
+    #test aside article h2 {
+        width: 90%;
+        font-size: 3rem;
+        padding-bottom: 3rem;
+    }
+    
+    #test aside article div {
+        width: 90%;
+        flex-direction: column;
+    }
+    
+    #test aside article div section img {
+        width: 5rem;
+    }
+    
+    #test aside article div section {
+        width: 90%;
+    }
+    
+    #test aside article div section p {
+        font-size: 1.5rem;
+    }
+    
+    #test aside article div section h4 {
+        font-size: 1.4rem;
+    }
+    
+    #test aside picture {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    
+    #test aside picture img {
+        width: 22%;
+        padding-bottom: 1.5rem;
+    }
+    
+    #test aside picture img:hover {
+        transform: scale(1.1);
+        transition: 1s;
+    }
+
+    #pricing {
+        width: 100%;
+        padding-top: 6rem;
+    }
+    
+    #pricing section {
+        width: 90%;
+    }
+    
+    #pricing section h5 {
+        font-size: 1.4rem;
+    }
+    
+    #pricing section h2 {
+        font-size: 2.8rem;
+    }
+    
+    
+    #pricing aside {
+        width: 80%;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    #pricing aside article {
+        width: 90%;
+        height: 70vh;
+        line-height: 3.5rem;
+    }
+
+    #pricing aside article h4 {
+        font-size: 1.6rem;
+    }
+    
+    #pricing aside article h1 {
+        font-size: 5rem;
+        font-family: sans-serif;
+    }
+    
+    #pricing aside article h1 ion-icon {
+        font-size: 2.5rem;
+    }
+    
+    #pricing aside article p {
+        font-size: 1.4rem;
+    }
+    
+    #pricing aside article ul {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    
+    #pricing aside article ul li ion-icon {
+        font-size: 2.3rem;
+    }
+    
+    
+    #pricing aside article button {
+        width: 17rem;
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+
+    #plans {
+        width: 100%;
+        height: auto;
+    }
+    
+    #plans>p {
+        width: 80%;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    
+    #plans aside {
+        width: 90%;
+        flex-direction: column;
+    }
+    
+    #plans aside section {
+        width: 90%;
+        height: auto;
+        gap: 2rem;
+    }
+    
+    #plans aside section ion-icon{
+        font-size: 3rem;
+        padding: .8rem;
+    }
+    
+    #plans aside section h3 {
+        font-size: 1.8rem;
+    }
+    
+    #plans aside section p {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+
+    
+    #free {
+        width: 100%;
+        height: auto;
+    }
+
+    #free aside {
+        width: 95%;
+        height: auto;
+        overflow: hidden;
+        flex-direction: column;
+    }
+
+    #free article {
+        width: 90%;
+        height: auto;
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+
+    #free aside article h2 {
+        width: 80%;
+        font-size: 3rem;
+    }
+
+    #free aside article p {
+        width: 80%;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    #free img {
+        width: 100%;
+        opacity: .7;
+    }
+
+    #free aside picture {
+        width: 80%;
+        height: auto;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    #free aside picture section {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+
+    #free aside section h4 {
+        font-size: 1.3rem;
+    }
+
+    #free aside section input,select {
+        font-size: 1.4rem;
+        width: 100%;
+        height: 3.7rem;
+    }
+
+    #free aside section input::placeholder {
+        font-size: 1.4rem;
+        filter: opacity(.5);
+    }
+
+    #free aside section button {
+        font-size: 1.5rem;
+        height: 4rem;
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+    }
+
+    footer aside {
+        width: 90%;
+        height: auto;
+        flex-wrap: wrap;
+        padding-bottom: 8rem;
+    }
+
+    footer aside section {
+        width: 24%;
+        height: 20vh;
+        gap: 2rem;
+        padding-top: 5rem;
+    }
+
+    footer aside section span ion-icon {
+        font-size: 2rem;
+    }
+
+    footer aside section img {
+        width: 13rem;
+    }
+
+    footer aside section:first-child h5 {
+        font-size: 1.2rem;
+    }
+
+    footer aside section h3 {
+        font-size: 1.4rem;
+    }
+
+    footer aside section p {
+        font-size: 1.3rem;
+        font-weight: lighter;
+        opacity: .8;
+    }
+
+    footer aside section ul {
+        font-size: 1.3rem;
+    }
+
+} 
